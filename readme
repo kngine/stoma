@@ -18,6 +18,13 @@ TYPE=6: TP+DSA by ILP
 
 example: ./stoma ./via_benchmarks/fft1.via1.txt 1 310
 
+To generate gds output, add '-output' at the end of the command line.
+example: ./stoma ./via_benchmarks/fft1.via2.txt 1 310 2 300 300 -output
+
+layer 10,15,20: mask 1,2,3
+layer 12: grouping
+layer 13: conflict
+
 Note:
 Please make sure the input contains the layout of only one layer.
 
